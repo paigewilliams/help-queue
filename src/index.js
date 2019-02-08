@@ -1,6 +1,8 @@
-let greeting = React.createElement('h1', {}, 'Hello, world!!');
+const greeting = React.createElement('h1', {}, 'Hello, world!!');
+const clock = React.createElement('h2', {}, `It is ${new Date().toLocaleTimeString()}`);
+const app = React.createElement('div', {}, greeting, clock);
 
 ReactDOM.render(
-  greeting,
+  app,
   document.getElementById('react-app-root')
 );
