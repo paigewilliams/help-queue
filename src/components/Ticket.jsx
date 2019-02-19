@@ -25,10 +25,6 @@ function Ticket(props){
   }
 }
 
-function displayTimeOpen(timeOpen) {
-  return timeOpen.from(new Moment(), true);
-}
-
 Ticket.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
