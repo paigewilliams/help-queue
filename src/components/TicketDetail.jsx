@@ -1,10 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function TicketDetail(){
+function TicketDetail(props){
   return (
     <div>
-      <h1>Ticket Detail</h1>
+      <h1>{props.selectedTicket.nae}</h1>
     </div>
   )
 }
+
+TicketDetail.propTypes = {
+  selectedTicket: PropTypes.object
+}
+
 export default TicketDetail;
