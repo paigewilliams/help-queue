@@ -11,12 +11,12 @@ class NewTicketControl extends React.Component {
     };
     this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
   }
-  
+
   handleTroubleshootingConfirmation(){
     this.setState({formVisibleOnPage: true});
-    this.state = {test: 'hey'};
-  }
   
+  }
+
   render(){
     let currentlyVisibleContent = null;
     if(this.state.formVisibleOnPage){
@@ -24,7 +24,7 @@ class NewTicketControl extends React.Component {
     } else {
       currentlyVisibleContent = <ConfirmationQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
     }
-    
+
     return(
       <div>
         {currentlyVisibleContent}
