@@ -23,7 +23,7 @@
       "react/no-multi-comp": 2,
       "react/no-direct-mutation-state": 2,
       "react/prefer-stateless-function": 2,
-      "react/npo-unused-state": 2,
+      "react/no-unused-state": 2,
       "react/require-render-return": 2,
       "react/jsx-indent-props": [
           "error",
