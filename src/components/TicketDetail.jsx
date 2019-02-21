@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 function TicketDetail(props){
   return (
     <div>
-      <h1>{props.selectedTicket.nae}</h1>
+      <hr/>
+      <h1>{props.selectedTicket.names} - {props.selectedTicket.location}</h1>
+      <h2>Submitted {props.selectedTicket.formattedWaitTime} ago</h2>
+      <h4>{props.selectedTicket.issue}</h4>
+       <hr/> 
     </div>
   )
 }
